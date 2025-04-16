@@ -24,10 +24,14 @@ ports:
   80/tcp: null
   8086/tcp: 8086
   8088/tcp: 8088
+  8888/tcp: 8888
+  9091/tcp: 9091
 ports_description:
   80/tcp: Web interface (Not required for Ingress)
   8086/tcp: InfluxDB server
   8088/tcp: RPC service for backup and restore
+  8888/tcp: Chronograf Web Interface
+  9092/tcp: Kapacitor HTTP API
 auth_api: true
 options:
   auth: true
